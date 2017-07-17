@@ -14,10 +14,10 @@ a.NavButtons {
   font-family: MyriadProBold;
   font-style: bold;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 2vw;
   z-index: 2;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 a.NavButtons:hover {
   color: rgb(216, 71, 25);
