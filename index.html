@@ -76,10 +76,10 @@
 
         if (index < 20) {index += 1}
         else if (index == 20) {index = 1}
-        document.getElementById("sp").src = "Images/HeaderImages/scrollingPic"+index+".jpg";
+        document.getElementById("sp").src = "Images/HEADERIMAGES/scrollingPic"+index+".jpg";
         setTimeout(scrollImages, 3000);
       }
-      
+      scrollImages();
 
       function showVideo(source) {
         document.getElementById('videoPlayerContainer').style.width = '80%';
