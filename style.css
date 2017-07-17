@@ -1,0 +1,29 @@
+@font-face {
+  font-family: MyriadProBold;
+  src: url(MyriadPro-Bold.otf);
+}
+
+@font-face {
+  font-family: MyriadProItalic;
+  src: url(MyriadPro-CondIt.otf);
+}
+a.NavButtons {
+  position: relative;
+  float: left;
+  color: black;
+  font-family: MyriadProBold;
+  font-style: bold;
+  text-decoration: none;
+  font-size: 1.5vw;
+  z-index: 2;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+a.NavButtons:hover {
+  color: rgb(216, 71, 25);
+}
+a.gamecastLinks {
+  font-family: MyriadProItalic;
+  font-size: 1vw;
+  color: white;
+}

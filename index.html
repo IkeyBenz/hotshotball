@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hot Shot</title>
+  </head>
+  <body>
+    <div id="TopBar" style="width:100%; padding-bottom: 12.3%; position:relative;">
+        <a class="NavButtons" href="#About" id="aboutButton" style="margin-left: 5%;">About</a>
+        <a class="NavButtons" href="#Champions" id="tournamentButton">Champions</a>
+        <a class="NavButtons" href="#Teams" id="mediaButton">Media</a>
+        <img src="Images/Logo.jpg" style="width: 12.3%; height: auto; position:absolute; left: 43.85%;" alt="">
+        <a class="NavButtons" href="#Teams" id="highlightsButton" style="margin-left: 18.88%;">Teams</a>
+        <a class="NavButtons" href="#Rules" id="registerButton">Rules</a>
+        <a class="NavButtons" href="#Register" id="registerButton">Register</a>
+    </div>
+
+    <!-- SCROLLING IMAGES //-->
+    <img class="scrollPics" src="Images/HEADERIMAGES/scrollingPic1.JPG" id="sp" alt="" style="width: 100%; height: auto; position:relative;">
+
+    <!-- ABOUT SECTION //-->
+    <div id="About" style="width: 100%; height: 125vw; position: relative;">
+        <img src="Images/About.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+    <!-- CHAMPIONS SECTION //-->
+    <div id="Champions" style="width: 100%; height: 155vw; position: relative">
+      <img src="Images/Champions.jpg" alt="" style="width: 100%; height: 100%;">
+
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 7.1%; top: 76%;" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k');">CLICK TO VIEW DEAL V. GINDI GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 6.9%; top: 82.3%;" onclick="return showVideo('https://www.youtube.com/embed/C1ujrdgjHBc');">CLICK TO VIEW JAMIE V. BEYDA GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 7.1%; top: 88.8%;" onclick="return showVideo('https://www.youtube.com/embed/j46xya95HBM');">CLICK TO VIEW LEVY V. BRAHA GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 6.37%; top: 94.9%;" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k');">CLICK TO VIEW SUTTON V. SCHMOOL GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 31.87%; top: 79.3%;" onclick="return showVideo('https://www.youtube.com/embed/_atPgg3IdGk');">CLICK TO VIEW DEAL V. JAMIE GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 31.5%; top: 91.7%;" onclick="return showVideo(''https://www.youtube.com/embed/CUzsJ7W0rz0');">CLICK TO VIEW LEVY V. SUTTON GAMECAST</a>
+      <a class="gamecastLinks" href="#" style="position: absolute; left: 54.9%; top: 85.48%;" onclick="return showVideo('https://www.youtube.com/embed/mG0NbHVt-RE');">CLICK TO VIEW DEAL V. SUTTON GAMECAST</a>
+
+      <div id="videoPlayerContainer" style="width: 0; height: 0; position: absolute; z-index: 10; top: 65%; left: 10%;">
+        <iframe id="videoPlayer" position="fixed" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+        <a id="closeButton" style="position: absolute; left: 100%; color: white; font-family: MyriadProBold;" href="#" onclick="closeVideo(); return false;"></a>
+      </div>
+
+    </div>
+
+    <!-- ON FIRE SECTION //-->
+    <div style="width: 100%; height: 181.3vw; position: relative;">
+      <img src="Images/OnFire.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+    <!-- TEAMS SECTION //-->
+    <div id="Teams" style="width: 100%; height: 52.3vw; position: relative;">
+      <img src="Images/Teams.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+    <!-- RULES SECTION//-->
+    <div id="Rules" style="width: 100%; height: 99.7vw; position: relative;">
+      <img src="Images/Rules.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+    <!-- HIGHLIGHTS SECTION //-->
+    <div style="width: 100%; height: 81.6vw; position: relative;">
+      <img src="Images/Highlights.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+    <!-- REGISTER SECTION //-->
+    <div id="Register" style="width: 100%; height; 83.2vw; position: relative;">
+      <img src="Images/Register.jpg" alt="" style="width: 100%; height: 100%;">
+    </div>
+
+
+    <!-- JAVASCRIPT FUNCTIONS //-->
+    <script type="text/javascript">
+      var index = 0;
+      function scrollImages() {
+
+        if (index < 5) {index += 1}
+        else if (index == 5) {index = 1}
+        document.getElementById("sp").src = "Images/HeaderImages/scrollingPic"+index+".JPG";
+        setTimeout(scrollImages, 3000);
+      }
+      scrollImages();
+
+      function showVideo(source) {
+        document.getElementById('videoPlayerContainer').style.width = '80%';
+        document.getElementById('videoPlayerContainer').style.height = '45vw';
+        document.getElementById('videoPlayer').src = source;
+        document.getElementById('closeButton').text = "Close"
+        return false;
+      }
+      function closeVideo() {
+        document.getElementById('videoPlayerContainer').style.width = '0';
+        document.getElementById('videoPlayerContainer').style.height = '0';
+        document.getElementById('videoPlayer').src = "";
+        document.getElementById('closeButton').text = "";
+      }
+    </script>
+
+
+
+  </body>
+</html>
