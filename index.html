@@ -95,7 +95,8 @@
 
         setTimeout(scrollImages, 4000);
       }
-      scrollImages();
+      setTimeout(scrollImages, 2000);
+      
 
 
       function showVideo(source) {
@@ -118,8 +119,8 @@
           if (op <= 0.1) {
               clearInterval(timer);
               element.style.display = 'none';
-              if (index < 22) {index += 1}
-              else if (index == 22) {index = 1}
+              if (index < 19) {index += 1}
+              else if (index == 19) {index = 1}
               element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
 
           }
