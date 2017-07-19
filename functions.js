@@ -62,11 +62,12 @@ $(document).ready(function(){
   // Smoothly scroll to place when nav buttons are pressed
   $(document).on('click', 'a.NavButtons', function(event) {
     event.preventDefault();
-
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+        scrollTop: ($( $.attr(this, 'href') ).offset().top - (7 * (100 / document.documentElement.clientWidth)))
+    }, Math.abs($( $.attr(this, 'href') ).offset().top - $(window).scrollTop()) / 2);
 });
+
+
 
 
 
