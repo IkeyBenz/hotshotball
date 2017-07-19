@@ -20,7 +20,7 @@ $(document).ready(function(){
     unfade(bottomImage);
     setTimeout(scrollImages, 4000);
   }
-  scrollImages();
+  setTimeout(scrollImages, 3000);
 
   var index = 2;
   function fade(element) {
@@ -37,7 +37,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op -= op * 0.1;
-    }, 50);
+    }, 1);
   }
 
   function unfade(element) {
@@ -50,7 +50,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op += op * 0.1;
-    }, 10);
+    }, 1);
   }
 });
 
