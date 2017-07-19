@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  // Smoothly scroll to place when nav buttons are pressed
+  $(document).on('click', 'a.NavButtons', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: ($( $.attr(this, 'href') ).offset().top - (7 * (100 / document.documentElement.clientWidth)))
+    }, Math.abs($( $.attr(this, 'href') ).offset().top - $(window).scrollTop()) / 2);
+  });
+
   function scrollImages() {
     var imageOne = document.getElementById('spOne');
     var imageTwo = document.getElementById('spTwo');
@@ -10,25 +18,10 @@ $(document).ready(function(){
 
     fade(topImage);
     unfade(bottomImage);
-
-
     setTimeout(scrollImages, 4000);
   }
-  setTimeout(scrollImages, 2000);
+  scrollImages();
 
-  function showVideo(source) {
-    document.getElementById('videoPlayerContainer').style.width = '80%';
-    document.getElementById('videoPlayerContainer').style.height = '45vw';
-    document.getElementById('videoPlayer').src = source;
-    document.getElementById('closeButton').text = "Close"
-    return false;
-  }
-  function closeVideo() {
-    document.getElementById('videoPlayerContainer').style.width = '0';
-    document.getElementById('videoPlayerContainer').style.height = '0';
-    document.getElementById('videoPlayer').src = "";
-    document.getElementById('closeButton').text = "";
-  }
   var index = 2;
   function fade(element) {
     var op = 1;  // initial opacity
@@ -59,16 +52,18 @@ $(document).ready(function(){
       op += op * 0.1;
     }, 10);
   }
-  // Smoothly scroll to place when nav buttons are pressed
-  $(document).on('click', 'a.NavButtons', function(event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: ($( $.attr(this, 'href') ).offset().top - (7 * (100 / document.documentElement.clientWidth)))
-    }, Math.abs($( $.attr(this, 'href') ).offset().top - $(window).scrollTop()) / 2);
 });
 
-
-
-
-
-});
+function showVideo(source) {
+  document.getElementById('videoPlayerContainer').style.width = '80%';
+  document.getElementById('videoPlayerContainer').style.height = '45vw';
+  document.getElementById('videoPlayer').src = source;
+  document.getElementById('closeButton').text = "X"
+  return false;
+}
+function closeVideo() {
+  document.getElementById('videoPlayerContainer').style.width = '0';
+  document.getElementById('videoPlayerContainer').style.height = '0';
+  document.getElementById('videoPlayer').src = "";
+  document.getElementById('closeButton').text = "";
+}
