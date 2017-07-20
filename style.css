@@ -33,7 +33,7 @@ a.gamecastLinks {
   color: white;
 }
 
-.Slider {
+.VenueSlider {
   overflow: hidden;
   width: 50%;
   height: 33.37vw;
@@ -42,13 +42,13 @@ a.gamecastLinks {
   top: 19.57vw;
 }
 
-.Slider figure img {
+.VenueSlider figure img {
   width: 50vw;
   height: 33.37vw;
   float: left;
 }
 
-.Slider figure {
+.VenueSlider figure {
   position: relative;
   width: 250vw;
   margin: 0;
@@ -56,6 +56,81 @@ a.gamecastLinks {
   animation: 30s slidy infinite;
 }
 
+.TeamsSlider {
+  overflow: hidden;
+  width: 82.66%;
+  height: 36vw;
+  position: absolute;
+  left: 17.3%;
+  top: 67.6vw;
+}
+
+.TeamsSlider figure img {
+  width: 39.8575vw;
+  height: 29.4338vw;
+  float: left;
+}
+
+.TeamsSlider figure {
+  position: relative;
+  width: 371.97%;
+  margin: 0;
+  left: 0;
+  animation: 30s teamsSliderAnimation infinite;
+}
+@keyframes teamsSliderAnimation {
+  0% {
+    left: 0vw;
+  }
+  8% {
+    left: 0vw;
+  }
+  12% {
+    left: -82.66vw;
+  }
+  20% {
+    left: -82.66vw;
+  }
+  24% {
+    left: -165.32vw;
+  }
+  32% {
+    left: -165.32vw;
+  }
+  36% {
+    left: -247.98vw;
+  }
+  44% {
+    left: -247.98vw;
+  }
+  48% {
+    left: -330.64vw;
+  }
+  56% {
+    left: -330.64vw;
+  }
+  60% {
+    left: -247.98vw;
+  }
+  68% {
+    left: -247.98vw;
+  }
+  72% {
+    left: -165.32vw;
+  }
+  80% {
+    left: -165.32vw;
+  }
+  84% {
+    left: -82.66vw;
+  }
+  92% {
+    left: -82.66vw;
+  }
+  96% {
+    left: 0vw;
+  }
+}
 @keyframes slidy {
   0% {
     left: 0vw;

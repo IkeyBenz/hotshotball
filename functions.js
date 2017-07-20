@@ -67,3 +67,15 @@ function closeVideo() {
   document.getElementById('videoPlayer').src = "";
   document.getElementById('closeButton').text = "";
 }
+
+function slideTeamRight() {
+  var figure = document.getElementById('teamFigure')
+  figure.style.left = figure.style.left + "82.66vw";
+  return false;
+}
+
+function slideTeamLeft() {
+  var figure = document.getElementById('teamFigure')
+  figure.style.left = figure.style.left - "82.66vw";
+  return false;
+}
