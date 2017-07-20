@@ -32,3 +32,80 @@ a.gamecastLinks {
   font-size: 1vw;
   color: white;
 }
+
+.Slider {
+  overflow: hidden;
+  width: 50%;
+  height: 33.37vw;
+  position: absolute;
+  left: 13.27%;
+  top: 19.57vw;
+}
+
+.Slider figure img {
+  width: 50vw;
+  height: 33.37vw;
+  float: left;
+}
+
+.Slider figure {
+  position: relative;
+  width: 250vw;
+  margin: 0;
+  left: 0;
+  animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0vw;
+  }
+  8% {
+    left: 0vw;
+  }
+  12% {
+    left: -50vw;
+  }
+  20% {
+    left: -50vw;
+  }
+  24% {
+    left: -100vw;
+  }
+  32% {
+    left: -100vw;
+  }
+  36% {
+    left: -150vw;
+  }
+  44% {
+    left: -150vw;
+  }
+  48% {
+    left: -200vw;
+  }
+  56% {
+    left: -200vw;
+  }
+  60% {
+    left: -150vw;
+  }
+  68% {
+    left: -150vw;
+  }
+  72% {
+    left: -100vw;
+  }
+  80% {
+    left: -100vw;
+  }
+  84% {
+    left: -50vw;
+  }
+  92% {
+    left: -50vw;
+  }
+  96% {
+    left: 0vw;
+  }
+}

@@ -16,8 +16,8 @@ $(document).ready(function(){
     if (imageOne.style.opacity >= 1.0) {topImage = imageOne; bottomImage = imageTwo;}
     else if (imageTwo.style.opacity >= 1.0) {topImage = imageTwo; bottomImage = imageOne}
 
-    fade(topImage);
     unfade(bottomImage);
+    fade(topImage);
     setTimeout(scrollImages, 4000);
   }
   setTimeout(scrollImages, 5000);
@@ -27,8 +27,8 @@ $(document).ready(function(){
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
       if (op <= 0.1) {
-          clearInterval(timer);
           element.style.display = 'none';
+          clearInterval(timer);
           if (index < 19) {index += 1}
           else if (index == 19) {index = 1}
           element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
@@ -37,7 +37,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op -= op * 0.1;
-    }, 30);
+    }, 70);
   }
 
   function unfade(element) {
@@ -50,7 +50,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op += op * 0.1;
-    }, 15);
+    }, 70);
   }
 });
 
