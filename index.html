@@ -12,8 +12,8 @@
         <a class="NavButtons" href="#About" id="aboutButton" style="margin-left: 5%;">ABOUT</a>
         <a class="NavButtons" href="#Champions" id="tournamentButton">CHAMPIONS</a>
         <a class="NavButtons" href="#OnFire" id="mediaButton">MEDIA</a>
-        <img src="Images/Logo.jpg" style="width: 4.5vw; height: auto; position:absolute; left: 46.85%;" alt="">
-        <a class="NavButtons" href="#Teams" id="highlightsButton" style="margin-left: 21%;">TEAMS</a>
+        <img src="Images/Logo.jpg" style="width: auto; height: 5vw; position:absolute; left: 42.1%;" alt="">
+        <a class="NavButtons" href="#Teams" id="highlightsButton" style="margin-left: 32%;">TEAMS</a>
         <a class="NavButtons" href="#Rules" id="registerButton">RULES</a>
         <a class="NavButtons" href="#Register" id="registerButton">REGISTER</a>
     </div>
@@ -71,20 +71,19 @@
 
       <div class="TeamsSlider">
         <figure id="teamFigure">
-          <img src="Images/TeamImages/06.JPG" alt="" style="margin-right: 2.3vw;">
+          <img src="Images/TeamImages/06.JPG" alt="">
           <img src="Images/TeamImages/08.JPG" alt="">
-          <img src="Images/TeamImages/00.JPG" alt="" style="margin-right: 2.3vw;">
+          <img src="Images/TeamImages/00.JPG" alt="">
           <img src="Images/TeamImages/01.JPG" alt="">
-          <img src="Images/TeamImages/02.JPG" alt="" style="margin-right: 2.3vw;">
+          <img src="Images/TeamImages/02.JPG" alt="">
           <img src="Images/TeamImages/03.JPG" alt="">
-          <img src="Images/TeamImages/05.JPG" alt="" style="margin-right: 2.3vw;">
+          <img src="Images/TeamImages/05.JPG" alt="">
           <img src="Images/TeamImages/07.JPG" alt="">
           <img src="Images/TeamImages/09.JPG" alt="">
         </figure>
+        <button id="teamNextBtn" class="TeamsSliderButton" type="button" style="background: url(Images/nextButton.png) no-repeat; right: 10px;" onclick="return slideTeamLeft();"></button>
+        <button id="teamLastBtn" class="TeamsSliderButton" type="button" style="background: url(Images/lastButton.png) no-repeat; left: 10px; display: none;" onclick="return slideTeamRight();"></button>
       </div>
-
-      <a href="#" style="position: absolute; left: 20vw; top: 105vw; z-index: 2;" onclick="return slideTeamRight();">Prev</a>
-      <a href="#" style="position: absolute; left: 92vw; top: 105vw; z-index: 2;" onclick="return slideTeamLeft();">Next</a>
     </div>
 
     <!-- RULES SECTION//-->
