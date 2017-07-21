@@ -1,10 +1,15 @@
 @font-face {
   font-family: MyriadProBold;
-  src: url(FONT/MyriadPro-Cond.otf);
+  src: url(FONT/HurmeDesign-HurmeGeometricSans3SemiBold.otf);
 }
 
 @font-face {
   font-family: MyriadProItalic;
+  src: url(FONT/MyriadPro-CondIt.otf);
+}
+
+@font-face {
+  font-family: captionFont;
   src: url(FONT/MyriadPro-CondIt.otf);
 }
 a.NavButtons {
@@ -12,11 +17,11 @@ a.NavButtons {
   float: left;
   color: black;
   font-family: MyriadProBold;
+  font-size: 1.7vw;
   text-decoration: none;
-  font-size: 1.9vw;
   z-index: 2;
   margin-top: 2vw;
-  margin-left: 7.8%;
+  margin-left: 5.2%;
 }
 a.NavButtons:hover {
   color: rgb(216, 71, 25);
@@ -37,8 +42,8 @@ a.gamecastLinks {
   width: 50%;
   height: 33.37vw;
   position: absolute;
-  left: 13.27%;
-  top: 19.57vw;
+  left: 13.37%;
+  top: 19.9vw;
 }
 .VenueSlider figure img {
   width: 50vw;
@@ -47,7 +52,7 @@ a.gamecastLinks {
 }
 .VenueSlider figure {
   position: relative;
-  width: 250vw;
+  width: 150vw;
   margin: 0;
   left: 0;
   transition: transform .5s ease-in-out;
@@ -83,11 +88,16 @@ a.gamecastLinks {
 }
 .TeamsSliderButton {
   position: absolute;
-  background-size: auto;
+  height: 8.62vw;
+  width: 8.62vw;
+  background-size: cover;
+  background-position: center;
   border: none;
-  bottom: 10px;
-  height: 114px;
-  width: 61px;
-  z-index: 2;
+  top: 50%;
 
+  z-index: 2;
+}
+.ChampRects:hover {
+  transform:scale(1.2);
+  transition: transform .1s ease-in-out;
 }

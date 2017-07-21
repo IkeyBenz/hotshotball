@@ -8,12 +8,12 @@
     <title>Hot Shot</title>
   </head>
   <body>
-    <div id="TopBar" style="width:100%; height: 5vw; top: 0; position: fixed; z-index: 3; background-color: rgba(250, 250, 250, 0.75);">
+    <div id="TopBar" style="width:100%; height: 5vw; top: 0; position: fixed; z-index: 3; background-color: rgba(250, 250, 250, 1.0);">
         <a class="NavButtons" href="#About" id="aboutButton" style="margin-left: 5%;">ABOUT</a>
         <a class="NavButtons" href="#Champions" id="tournamentButton">CHAMPIONS</a>
         <a class="NavButtons" href="#OnFire" id="mediaButton">MEDIA</a>
-        <img src="Images/Logo.jpg" style="width: auto; height: 5vw; position:absolute; left: 42.1%;" alt="">
-        <a class="NavButtons" href="#Teams" id="highlightsButton" style="margin-left: 32%;">TEAMS</a>
+        <img src="Images/Logo.jpg" style="width: auto; height: 4vw; position:absolute; left: 42.1%; top: 1vw;" alt="">
+        <a class="NavButtons" href="#Teams" id="highlightsButton" style="margin-left: 27.5%;">TEAMS</a>
         <a class="NavButtons" href="#Rules" id="registerButton">RULES</a>
         <a class="NavButtons" href="#Register" id="registerButton">REGISTER</a>
     </div>
@@ -30,20 +30,26 @@
         <div class="VenueSlider">
           <figure id="venueFigure">
             <img src="Images/VenueImages/AC4I2276.JPG" alt="">
-            <img src="Images/VenueImages/AC4I2285.JPG" alt="">
-            <img src="Images/VenueImages/IMG_8427_1.jpg" alt="">
-            <img src="Images/VenueImages/AC4I4764.JPG" alt="">
             <img src="Images/VenueImages/AC4I2215.JPG" alt="">
+            <img src="Images/VenueImages/AC4I4764.JPG" alt="">
           </figure>
         </div>
-        <button id="venueNextBtn" class="VenueSliderButton" type="button" style=" left: 57%; top: 42.5vw; background: url(Images/nextButton.png) no-repeat;" onclick="return moveVenueLeft();"></button>
-        <button id="venueLastBtn" class="VenueSliderButton" type="button" style=" left: 15%; top: 42.5vw; background: url(Images/lastButton.png) no-repeat; display: none;" onclick="return moveVenueRight();"></button>
+        <button id="venueNextBtn" class="VenueSliderButton" type="button" style=" left: 57%; top: 35.5vw; background: url(Images/nextButton.png) no-repeat;" onclick="return moveVenueLeft();"></button>
+        <button id="venueLastBtn" class="VenueSliderButton" type="button" style=" left: 15%; top: 35.5vw; background: url(Images/lastButton.png) no-repeat; display: none;" onclick="return moveVenueRight();"></button>
+        <p id="venueCaption" style="position: absolute; z-index: 2; top: 52.7vw; left: 13.28%; font-family: captionFont; font-size: 1vw; color: gray;">HOT SHOT SIGNATURE COURT</p>
     </div>
 
     <!-- CHAMPIONS SECTION //-->
     <div id="Champions" style="width: 100%; height: 155vw; position: relative">
       <img src="Images/Champions.jpg" alt="" style="width: 100%; height: 100%;">
-
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 111vw;"><img src="Images/ChampionRectangles/Deal21.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 115vw;"><img src="Images/ChampionRectangles/Gindi10.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 120.8vw;"><img src="Images/ChampionRectangles/Jamie22.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 124.8vw;"><img src="Images/ChampionRectangles/Beyda16.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 130.8vw;"><img src="Images/ChampionRectangles/Levy21.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 134.8vw;"><img src="Images/ChampionRectangles/Braha7.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 140.13vw;"><img src="Images/ChampionRectangles/Sutton21.jpg" style="width:100%; height: 100%;" alt=""></div>
+      <div class="ChampRects" style="position: absolute; width: 18.972%; height: 2.73715vw; left: 5.3243%; top: 144.1vw;"><img src="Images/ChampionRectangles/Schmool18.jpg" style="width:100%; height: 100%;" alt=""></div>
       <a class="gamecastLinks" href="#" style="position: absolute; left: 7.1%; top: 76%;" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k?autoplay=1');">CLICK TO VIEW DEAL V. GINDI GAMECAST</a>
       <a class="gamecastLinks" href="#" style="position: absolute; left: 6.9%; top: 82.3%;" onclick="return showVideo('https://www.youtube.com/embed/C1ujrdgjHBc?autoplay=1');">CLICK TO VIEW JAMIE V. BEYDA GAMECAST</a>
       <a class="gamecastLinks" href="#" style="position: absolute; left: 7.1%; top: 88.8%;" onclick="return showVideo('https://www.youtube.com/embed/j46xya95HBM?autoplay=1');">CLICK TO VIEW LEVY V. BRAHA GAMECAST</a>
@@ -57,12 +63,15 @@
         <a id="closeButton" style="position: absolute; left: 100%; top: -1vw; color: rgb(216, 71, 25); font-family: MyriadProBold; font-size: 2vw;" href="#" onclick="closeVideo(); return false;"></a>
       </div>
 
+      <img src="Images/flameLogo.jpg" style="position: absolute; top: 94%; left: 46%; width: 8%; height: auto;" alt="">
+
     </div>
 
     <!-- ON FIRE/MEDIA SECTION //-->
     <div id="OnFire" style="width: 100%; height: 124.33vw; position: relative;">
       <img src="Images/OnFire.jpg" alt="" style="width: 100%; height: 100%;">
       <video src="TeamsMedia/BIBI_FINAL.mp4" controls poster="TeamsMedia/BibiPosterImage.jpg" style="width: 43.4945%; height: 32.358vw; z-index: 2; position: absolute; left: 0; top: 18.9vw;"></video>
+      <video src="TeamsMedia/GuindiVid.mp4" controls poster="TeamsMedia/GuindiPosterImage.jpg" style="width: 43.4945%; height: 32.358vw; z-index: 2; position: absolute; left: 9.898vw; top: 54.593vw;"></video>
     </div>
 
     <!-- TEAMS SECTION //-->
@@ -71,23 +80,23 @@
 
       <div class="TeamsSlider">
         <figure id="teamFigure">
+          <img src="Images/TeamImages/01.JPG" alt="">
           <img src="Images/TeamImages/06.JPG" alt="">
           <img src="Images/TeamImages/08.JPG" alt="">
           <img src="Images/TeamImages/00.JPG" alt="">
-          <img src="Images/TeamImages/01.JPG" alt="">
           <img src="Images/TeamImages/02.JPG" alt="">
           <img src="Images/TeamImages/03.JPG" alt="">
           <img src="Images/TeamImages/05.JPG" alt="">
           <img src="Images/TeamImages/07.JPG" alt="">
           <img src="Images/TeamImages/09.JPG" alt="">
         </figure>
-        <button id="teamNextBtn" class="TeamsSliderButton" type="button" style="background: url(Images/nextButton.png) no-repeat; right: 10px;" onclick="return slideTeamLeft();"></button>
-        <button id="teamLastBtn" class="TeamsSliderButton" type="button" style="background: url(Images/lastButton.png) no-repeat; left: 10px; display: none;" onclick="return slideTeamRight();"></button>
+        <button id="teamNextBtn" class="TeamsSliderButton" type="button" style="background: url(Images/nextButton.png) no-repeat; right: 0;" onclick="return slideTeamLeft();"></button>
+        <button id="teamLastBtn" class="TeamsSliderButton" type="button" style="background: url(Images/lastButton.png) no-repeat; left: 15px; display: none;" onclick="return slideTeamRight();"></button>
       </div>
     </div>
 
     <!-- RULES SECTION//-->
-    <div id="Rules" style="width: 100%; height: 99.7vw; position: relative;">
+    <div id="Rules" style="width: 100%; height: 119vw; position: relative;">
       <img src="Images/Rules.jpg" alt="" style="width: 100%; height: 100%;">
     </div>
 

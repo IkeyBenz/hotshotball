@@ -70,16 +70,23 @@ function closeVideo() {
 var venueLeft = 0;
 function moveVenueLeft() {
   document.getElementById('venueLastBtn').style.display = "";
-  venueLeft -= 20
+  venueLeft -= (100 / 3);
+  if (venueLeft == -(100 / 3)) {
+    document.getElementById('venueCaption').innerHTML = "ROBUST GOALS";
+  } else if (venueLeft == -(200 / 3)) {
+    document.getElementById('venueCaption').innerHTML = "CUSTOM WOODEN BACKBAORDS";
+  }
   document.getElementById('venueFigure').style.WebkitTransform = "translatex("+venueLeft+"%)";
   document.getElementById('venueFigure').style.msTransform = "translatex("+venueLeft+"%)";
   document.getElementById('venueFigure').style.transform = "translatex("+venueLeft+"%)";
-  if (venueLeft <= -80) {document.getElementById('venueNextBtn').style.display = "none";}
+  if (venueLeft <= -65) {document.getElementById('venueNextBtn').style.display = "none";}
   return false;
 }
 function moveVenueRight() {
+  venueLeft += (100 / 3);
+  if (venueLeft == -(100 / 3)) {document.getElementById('venueCaption').innerHTML = "ROBUST GOALS"}
+  else if (venueLeft == 0) {document.getElementById('venueCaption').innerHTML = "HOT SHOT SIGNATURE COURT"}
   document.getElementById('venueNextBtn').style.display = "";
-  if (venueLeft < 0) {venueLeft += 20}
   document.getElementById('venueFigure').style.WebkitTransform = "translatex("+venueLeft+"%)";
   document.getElementById('venueFigure').style.msTransform = "translatex("+venueLeft+"%)";
   document.getElementById('venueFigure').style.transform = "translatex("+venueLeft+"%)";
