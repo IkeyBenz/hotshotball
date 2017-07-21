@@ -37,7 +37,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op -= op * 0.1;
-    }, 70);
+    }, 20);
   }
 
   function unfade(element) {
@@ -50,7 +50,7 @@ $(document).ready(function(){
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op += op * 0.1;
-    }, 70);
+    }, 20);
   }
 });
 
@@ -66,6 +66,25 @@ function closeVideo() {
   document.getElementById('videoPlayerContainer').style.height = '0';
   document.getElementById('videoPlayer').src = "";
   document.getElementById('closeButton').text = "";
+}
+var venueLeft = 0;
+function moveVenueLeft() {
+  document.getElementById('venueLastBtn').style.display = "";
+  venueLeft -= 20
+  document.getElementById('venueFigure').style.WebkitTransform = "translatex("+venueLeft+"%)";
+  document.getElementById('venueFigure').style.msTransform = "translatex("+venueLeft+"%)";
+  document.getElementById('venueFigure').style.transform = "translatex("+venueLeft+"%)";
+  if (venueLeft <= -80) {document.getElementById('venueNextBtn').style.display = "none";}
+  return false;
+}
+function moveVenueRight() {
+  document.getElementById('venueNextBtn').style.display = "";
+  if (venueLeft < 0) {venueLeft += 20}
+  document.getElementById('venueFigure').style.WebkitTransform = "translatex("+venueLeft+"%)";
+  document.getElementById('venueFigure').style.msTransform = "translatex("+venueLeft+"%)";
+  document.getElementById('venueFigure').style.transform = "translatex("+venueLeft+"%)";
+  if (venueLeft == 0) {document.getElementById('venueLastBtn').style.display = "none"}
+  return false;
 }
 
 function slideTeamRight() {
