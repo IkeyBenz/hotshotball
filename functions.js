@@ -109,12 +109,12 @@ function slideTeamLeft() {
   return false;
 }
 function slideTeamRight() {
-  var teamFigure = document.getElementById('teamFigure');
-  document.getElementById('teamNextBtn').style.display = "";
   teamLeft += (100 / 9);
+  var teamFigure = document.getElementById('teamFigure');
   teamFigure.style.WebkitTransform = "translatex("+teamLeft+"%)";
   teamFigure.style.msTransform = "translatex("+teamLeft+"%)";
   teamFigure.style.transform = "translatex("+teamLeft+"%)";
   if (teamLeft == 0) {document.getElementById('teamLastBtn').style.display = "none"}
+  document.getElementById('teamNextBtn').style.display = "";
   return false;
 }
