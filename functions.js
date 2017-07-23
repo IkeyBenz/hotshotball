@@ -29,8 +29,8 @@ $(document).ready(function(){
       if (op <= 0.1) {
           element.style.display = 'none';
           clearInterval(timer);
-          if (index < 19) {index += 1}
-          else if (index == 19) {index = 1}
+          if (index < 22) {index += 1}
+          else if (index == 22) {index = 1}
           element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
 
       }
