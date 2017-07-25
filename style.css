@@ -49,6 +49,21 @@ a.GamecastLinks {
   left: 13.37%;
   top: 19.9vw;
 }
+.WaiverSlideDown {
+  overflow: hidden;
+  position: absolute;
+  left: 19%;
+  top: 61.86vw;
+}
+.WaiverSlideDown figure {
+  position: relative;
+  width: 45.4945vw;
+  height: 70vw;
+  margin: 0;
+  top: -100%;
+  left: 0;
+  transition: transform .5s ease-in-out;
+}
 .VenueSlider figure img {
   width: 50vw;
   height: 33.37vw;

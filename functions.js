@@ -118,3 +118,9 @@ function slideTeamRight() {
   document.getElementById('teamNextBtn').style.display = "";
   return false;
 }
+function showWaiver() {
+  document.getElementById('waiverFigure').style.WebkitTransform = "translateY(100%)";
+  document.getElementById('waiverFigure').style.msTransform = "translateY(100%)";
+  document.getElementById('waiverFigure').style.transform = "translateY(100%)";
+  return false;
+}
