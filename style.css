@@ -12,6 +12,10 @@
   font-family: captionFont;
   src: url(FONT/MyriadPro-CondIt.otf);
 }
+@font-face {
+  font-family: HurmeRegular;
+  src: url(FONT/MyriadPro-Cond.otf);
+}
 a.NavButtons {
   position: relative;
   float: left;
@@ -31,7 +35,7 @@ a.NavButtons:hover {
 #TopBar.shrinked {
   padding-bottom: 1.5vw;
 }*/
-a.gamecastLinks {
+a.GamecastLinks {
   font-family: MyriadProItalic;
   font-size: 1vw;
   color: white;
@@ -97,7 +101,26 @@ a.gamecastLinks {
 
   z-index: 2;
 }
+.GamecastLinks {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+}
+.ChampRects {
+  position: absolute;
+  width: 18.972%;
+  height: 6.86vw;
+}
 .ChampRects:hover {
   transform:scale(1.2);
   transition: transform .1s ease-in-out;
+}
+.RegisterForm div {
+  position: absolute;
+  height: 3.374vw;
+  left: 21.9%
+}
+
+.RegisterForm label {
+  font-family: HurmeRegular;
 }
