@@ -52,8 +52,7 @@ a.GamecastLinks {
 .WaiverSlideDown {
   overflow: hidden;
   position: absolute;
-  left: 19%;
-  top: 61.86vw;
+  
 }
 .WaiverSlideDown figure {
   position: relative;
