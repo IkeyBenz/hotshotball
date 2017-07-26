@@ -128,9 +128,15 @@ a.GamecastLinks {
   width: 18.972%;
   height: 6.86vw;
 }
+.ChampRects a {
+  display: none;
+}
 .ChampRects:hover {
   transform:scale(1.2);
   transition: transform .1s ease-in-out;
+}
+.ChampRects:hover a {
+  display: block;
 }
 .RegisterForm div {
   position: absolute;
@@ -148,4 +154,10 @@ a.GamecastLinks {
   border: 0;
   font-family: MyriadProRegular;
   font-size: 1.5vw;
+}
+
+input[type="radio"] {
+  -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+  -moz-appearance: checkbox;    /* Firefox */
+  -ms-appearance: checkbox;     /* not currently supported */
 }

@@ -45,31 +45,31 @@
 
       <div class="ChampRects" style="left: 5.3243%; top: 111vw;">
         <img src="Images/ChampionRectangles/ChampRec1.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k?autoplay=1');">CLICK TO VIEW DEAL V. GINDI GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k?autoplay=1');">CLICK TO VIEW DEAL V. GINDI GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 5.3243%; top: 120.8vw;">
         <img src="Images/ChampionRectangles/ChampRec2.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/C1ujrdgjHBc?autoplay=1');">CLICK TO VIEW JAMIE V. BEYDA GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/C1ujrdgjHBc?autoplay=1');">CLICK TO VIEW JAMIE V. BEYDA GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 5.3243%; top: 130.8vw;">
         <img src="Images/ChampionRectangles/ChampRec3.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/j46xya95HBM?autoplay=1');">CLICK TO VIEW LEVY V. BRAHA GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/j46xya95HBM?autoplay=1');">CLICK TO VIEW LEVY V. BRAHA GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 5.3243%; top: 140.13vw;">
         <img src="Images/ChampionRectangles/ChampRec4.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k?autoplay=1');">CLICK TO VIEW SUTTON V. SCHMOOL GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/uJX3umjlj5k?autoplay=1');">CLICK TO VIEW SUTTON V. SCHMOOL GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 29.95%; top: 116vw;">
         <img src="Images/ChampionRectangles/ChampRec5.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/_atPgg3IdGk?autoplay=1');">CLICK TO VIEW DEAL V. JAMIE GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/_atPgg3IdGk?autoplay=1');">CLICK TO VIEW DEAL V. JAMIE GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 29.95%; top: 135.4vw;">
         <img src="Images/ChampionRectangles/ChampRec6.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/CUzsJ7W0rz0?autoplay=1');">CLICK TO VIEW LEVY V. SUTTON GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/CUzsJ7W0rz0?autoplay=1');">CLICK TO VIEW LEVY V. SUTTON GAMECAST</a>
       </div>
       <div class="ChampRects" style="left: 53.43%; top: 125.8vw;">
         <img src="Images/ChampionRectangles/ChampRec7.jpg" style="width:100%; height: 100%;" alt="">
-        <a class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/mG0NbHVt-RE?autoplay=1');">CLICK TO VIEW DEAL V. SUTTON GAMECAST</a>
+        <a id="gcLink" class="GamecastLinks" href="#" onclick="return showVideo('https://www.youtube.com/embed/mG0NbHVt-RE?autoplay=1');">CLICK TO VIEW DEAL V. SUTTON GAMECAST</a>
       </div>
 
 
@@ -87,6 +87,7 @@
       <img src="Images/OnFire.jpg" alt="" style="width: 100%; height: 100%;">
       <video src="TeamsMedia/BIBI_FINAL.mp4" controls poster="TeamsMedia/BibiPosterImage.jpg" style="width: 43.4945%; height: 32.358vw; z-index: 2; position: absolute; left: 0; top: 18.9vw;"></video>
       <video src="TeamsMedia/GuindiVid.mp4" controls poster="TeamsMedia/GuindiPosterImage.jpg" style="width: 43.4945%; height: 32.358vw; z-index: 2; position: absolute; left: 9.898vw; top: 54.593vw;"></video>
+      <video src="TeamsMedia/Jamieinterview.mp4" controls poster="TeamsMedia/JamiePosterImage.jpg" style="width: 43.4945%; height: 32.358vw; z-index: 2; position: absolute; right: 0; top: 54.593vw;"></video>
     </div>
 
     <!-- TEAMS SECTION //-->
@@ -125,7 +126,7 @@
       <img src="Images/Register.jpg" alt="" style="width: 100%; height: 100%;">
 
 
-      <form class="RegisterForm" action="https://docs.google.com/forms/d/e/1FAIpQLScbAJ5jz1RlWqq9fbMFGT6ZTQ7RaRA5_534eYL3lPJ8y5awdw/formResponse" method="post">
+      <form class="RegisterForm" action="https://docs.google.com/forms/d/e/1FAIpQLScbAJ5jz1RlWqq9fbMFGT6ZTQ7RaRA5_534eYL3lPJ8y5awdw/formResponse" onsubmit="return checkForm();" method="post">
         <div style="top: 13.5vw">
           <label for="one">FIRST NAME:</label>
           <input id="one" type="text" name="entry.499612536" placeholder="Your First Name" value="">
@@ -143,7 +144,7 @@
 
         <div style="top: 25.1vw">
           <label for="four">BIRTHDAY:</label>
-          <input id="four" type="text" name="entry.1394554624" placeholder="DD/MM/YYYY" value="">
+          <input id="four" type="text" name="entry.1394554624" placeholder="MM/DD/YYYY" value="">
         </div>
 
         <div style="top: 29vw">
@@ -158,7 +159,9 @@
 
         <div style="top: 36.8vw">
           <label for="seven">TOURNAMENT:</label>
-          <input id="seven" type="text" name="entry.1557373982" value="">
+          <input id="seven" type="radio" name="entry.1557373982" value="Basketball" style="padding-right: 2vw;"> <label for="seven">Basketball</label>
+          <input id="seven" type="radio" name="entry.1557373982" value="VolleyBall" style="padding-right: 2vw;"> <label for="seven">Volleyball</label>
+          <input id="seven" type="radio" name="entry.1557373982" value="Tennis"> <label for="seven">Tennis</label>
         </div>
 
         <div style="top: 40.8vw">
@@ -183,10 +186,12 @@
         <div class="WaiverSlideDown" style="width: 45.4945vw; height: 70vw; left: 19vw; top: 61.86vw;">
           <figure id="waiverFigure">
             <img src="Images/Waiver.jpg" style="width: 100%; height: 85%; position: absolute; left: 0; top: 0;" alt="">
-            <div style="position: abosolute; top: 85%; left: 40%;"><button id="submitButton" type="submit">Accept And Submit</button></div>
+            <div style="position: abosolute; top: 85%; left: 23%;"><button type="button" onclick="return closeWaiver();">I Have Read Accepted The Terms And Conditions</button></div>
           </figure>
         </div>
 
+        <div id="submitDiv" style="position: absolute; top: 63vw; left: 39.7vw; display: none;"><button id="submitButton" type="submit" style="">Submit</button></div>
+        <div id="alert" style="position: absolute; top: 67vw; left: 27vw; color: red; display: none;">*Make sure every field is filled out before submitting*</div>
       </form>
 
 

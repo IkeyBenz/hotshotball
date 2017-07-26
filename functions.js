@@ -124,3 +124,32 @@ function showWaiver() {
   document.getElementById('waiverFigure').style.transform = "translateY(100%)";
   return false;
 }
+function closeWaiver() {
+  document.getElementById('waiverFigure').style.WebkitTransform = "translateY(-100%)";
+  document.getElementById('waiverFigure').style.msTransform = "translateY(-100%)";
+  document.getElementById('waiverFigure').style.transform = "translateY(-100%)";
+  document.getElementById('submitDiv').style.display = "";
+  return false;
+}
+function checkForm() {
+  var shouldSubmit = true;
+  if (document.getElementById('one').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('two').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('three').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('four').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('five').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('six').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('seven').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('eight').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('nine').value == "") {shouldSubmit = false;}
+  else if (document.getElementById('ten').value == "") {shouldSubmit = false;}
+
+  if (shouldSubmit == false) {
+    document.getElementById('alert').style.display = "";
+  } else {
+    document.getElementById('alert').style.display = "none";
+  }
+
+
+  return shouldSubmit;
+}
