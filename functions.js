@@ -31,7 +31,7 @@ $(document).ready(function(){
           clearInterval(timer);
           if (index < 20) {index += 1}
           else if (index == 20) {index = 1}
-          element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".jpg";
+          element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
 
       }
       element.style.opacity = op;
