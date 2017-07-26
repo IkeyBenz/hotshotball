@@ -29,8 +29,12 @@ $(document).ready(function(){
       if (op <= 0.1) {
           element.style.display = 'none';
           clearInterval(timer);
-          if (index < 20) {index += 1}
-          else if (index == 20) {index = 1}
+          if (index < 23) {
+            if (index == 15) {index += 3}
+            else if (index == 19) {index += 2}
+            else {index += 1}
+          }
+          else if (index == 23) {index = 1}
           element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
           // WHY DOESNT 16 17 OR 20 FUCKING WORK?????!!!!?!!?!??
       }
