@@ -148,8 +148,8 @@ a.GamecastLinks {
 .RegisterForm label {
   font-family: MyriadProRegular;
   font-size: 1.5vw;
-  color: rgb(77, 77, 77);padding-right: 0.5vw;
-  font-size: 1.5vw;
+  color: rgb(77, 77, 77);
+  padding-right: 0.5vw;
 }
 
 .RegisterForm input {
