@@ -55,11 +55,6 @@ $(document).ready(function(){
       op += op * 0.1;
     }, 20);
   }
-  $('#showWaiverButton').on('touchstart click', function(){
-    $('#waiverFigure').style.WebkitTransform = "translateY(100%)";
-    $('#waiverFigure').style.msTransform = "translateY(100%)";
-    $('#waiverFigure').style.transform = "translateY(100%)";
- });
 });
 
 function showVideo(source) {
