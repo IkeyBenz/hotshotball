@@ -101,7 +101,7 @@ a.GamecastLinks {
   margin: 0;
   left: 0;
   transition: transform .5s ease-in-out;
-  
+
 }
 .TeamsSlider figure img {
   width: 61.5298vw;
@@ -156,12 +156,20 @@ a.GamecastLinks {
   font-family: MyriadProRegular;
   font-size: 1.5vw;
 }
-
-input[type='radio'] {
-  -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
-  -moz-appearance: checkbox;    /* Firefox */
-  -ms-appearance: checkbox;     /* not currently supported */
+.RegistrationButtons {
+  background-color: rgb(0, 110, 140);
+  border-radius: 0.25vw;
+  color: white;
+  border: none;
+  font-size: 1.5vw;
+  padding: 0.75vw 1.5vw;
+  font-family: MyriadProBold;
 }
-.radioCheckbox {
-  background-color: rgb(216, 71, 25);
+.RegistrationButtons:hover {
+  background-color: rgb(0, 80, 110);
+}
+input[type="text"]
+{
+    background: transparent;
+    border: none;
 }

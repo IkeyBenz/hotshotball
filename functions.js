@@ -143,7 +143,6 @@ function checkForm() {
   else if (document.getElementById('four').value == "") {shouldSubmit = false;}
   else if (document.getElementById('five').value == "") {shouldSubmit = false;}
   else if (document.getElementById('six').value == "") {shouldSubmit = false;}
-  else if (document.getElementById('seven').value == "") {shouldSubmit = false;}
   else if (document.getElementById('eight').value == "") {shouldSubmit = false;}
   else if (document.getElementById('nine').value == "") {shouldSubmit = false;}
   else if (document.getElementById('ten').value == "") {shouldSubmit = false;}
