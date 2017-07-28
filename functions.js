@@ -55,6 +55,7 @@ $(document).ready(function(){
       op += op * 0.1;
     }, 20);
   }
+
 });
 
 function showVideo(source) {
