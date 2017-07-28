@@ -36,7 +36,6 @@ $(document).ready(function(){
           }
           else if (index == 23) {index = 1}
           element.src = "Images/HEADERIMAGES/scrollingPic" + index + ".JPG";
-          // WHY DOESNT 16 17 OR 20 FUCKING WORK?????!!!!?!!?!??
       }
       element.style.opacity = op;
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
